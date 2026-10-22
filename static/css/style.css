@@ -72,9 +72,41 @@ a { color: inherit; }
 
 /* Yacht Travel */
 .hlavicka { position: sticky; top: 0; z-index: 50; background: var(--bg); border-bottom: 1px solid var(--line); }
-.hlavicka .wrap { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); min-height: 64px; flex-wrap: wrap; }
+.hlavicka .wrap { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); min-height: 76px; padding-block: 12px; flex-wrap: wrap; }
 .logo { display: inline-flex; align-items: center; min-height: 44px; }
-.logo img { height: 48px; width: auto; }
+.logo img { height: 52px; width: auto; }
+.hlavicka nav { display: flex; flex-wrap: wrap; gap: 0 0.5rem; font-size: var(--step--1); font-weight: 600; }
+.hlavicka nav a { text-decoration: none; }
+.hlavicka nav a:hover { text-decoration: underline; text-decoration-color: var(--sun); text-decoration-thickness: 3px; text-underline-offset: 6px; }
+
+.hero { position: relative; min-height: min(80vh, 46rem); display: flex; align-items: flex-end; color: #fff; overflow: hidden; }
+.hero-obraz { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero-zakryv { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,29,81,.15) 0%, rgba(0,29,81,.35) 40%, rgba(0,29,81,.88) 100%); }
+.hero-text { position: relative; padding-block: var(--space-6) var(--space-5); }
+.hero h1 { font-size: var(--step-5); max-width: 18ch; }
+.stitok { font-size: var(--step--1); font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sun); margin-bottom: var(--space-2); }
+.lead { font-size: var(--step-1); margin-top: var(--space-3); max-width: 36rem; }
+.hero-akcie { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2) var(--space-3); margin-top: var(--space-4); }
+.hero .tlacitko { background: var(--sun); color: var(--navy); }
+.hero .tlacitko:hover { background: #fff; }
+.hero .odkaz { color: #fff; }
+.tlacitko, button[type="submit"] { display: inline-flex; align-items: center; justify-content: center; padding: 0.6em 1.4em; background: var(--accent); color: var(--accent-text); border: 0; text-decoration: none; }
+.hlavicka nav a, .paticka a { display: inline-flex; align-items: center; min-height: 44px; padding-inline: 0.25rem; }
+
+/* formulář */
+.formular { display: grid; gap: var(--space-2); max-width: 36rem; }
+.formular label { display: grid; gap: 0.25rem; font-size: var(--step--1); }
+.formular input, .formular textarea, .formular select { padding: 0.6em 0.8em; border: 1px solid var(--line); background: transparent; width: 100%; }
+.formular .past { position: absolute; left: -9999px; }
+.formular-stav { font-size: var(--step--1); min-height: 1.5em; }
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+
+/* Yacht Travel */
+.hlavicka { position: sticky; top: 0; z-index: 50; background: var(--bg); border-bottom: 1px solid var(--line); }
+.hlavicka .wrap { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); min-height: 76px; padding-block: 12px; flex-wrap: wrap; }
+.logo { display: inline-flex; align-items: center; min-height: 44px; }
+.logo img { height: 52px; width: auto; }
 .hlavicka nav { display: flex; flex-wrap: wrap; gap: 0 0.5rem; font-size: var(--step--1); font-weight: 600; }
 .hlavicka nav a { text-decoration: none; }
 .hlavicka nav a:hover { text-decoration: underline; text-decoration-color: var(--sun); text-decoration-thickness: 3px; text-underline-offset: 6px; }
@@ -94,11 +126,13 @@ a { color: inherit; }
 .nadpis-sekcie { font-size: var(--step-3); margin-bottom: var(--space-4); }
 .trasa { background: #fff; border-block: 1px solid var(--line); }
 .zastavky { list-style: none; margin: 0; padding: 0; position: relative; display: grid; gap: var(--space-5); }
-.zastavky::before { content: ""; position: absolute; left: 0.55rem; top: 0.5rem; bottom: 0.5rem; border-left: 3px dotted var(--sun); }
-.zastavka { display: grid; gap: var(--space-3); padding-left: 2.5rem; position: relative; }
-.zastavka::before { content: ""; position: absolute; left: 0; top: 0.35rem; width: 1.2rem; height: 1.2rem; border-radius: 50%; background: var(--sun); border: 4px solid #fff; box-shadow: 0 0 0 2px var(--navy); }
-.cislo { font-family: var(--font-head); font-size: var(--step-1); color: var(--accent); font-weight: 700; }
-.zastavka h3 { font-size: var(--step-3); margin: 0.2rem 0 var(--space-2); }
+.zastavka { display: grid; gap: var(--space-3); position: relative; }
+.zastavka h3 { font-size: var(--step-3); margin: 0 0 var(--space-2); }
+.zastavka-text { border-left: 4px solid var(--sun); padding-left: var(--space-3); }
+.dalsie { margin-top: var(--space-5); padding-top: var(--space-4); border-top: 2px dashed var(--sun); }
+.dalsie h3 { font-size: var(--step-2); margin-bottom: var(--space-2); }
+.dalsie ul { display: grid; gap: var(--space-2); }
+@media (min-width: 60rem) { .dalsie ul { grid-template-columns: repeat(3, 1fr); gap: var(--space-4); } }
 .zastavka p + p { margin-top: var(--space-1); }
 .zastavka-foto img, .tim-foto img, .galeria-mriezka img { width: 100%; border-radius: 0.5rem; object-fit: cover; }
 .zastavka-foto img { aspect-ratio: 3 / 2; }

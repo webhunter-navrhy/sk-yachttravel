@@ -3,16 +3,13 @@
 {% set cesta = '' %}
 {% block obsah %}
 <section class="hero">
-  <div class="wrap hero-in">
-    <div class="hero-text">
-      <p class="stitok">Žilina · Chorvátsko</p>
-      <h1>Dovolenka na jachte, prenájom lodí a kurzy jachtingu</h1>
-      <p class="lead">Neláka Vás pobyt v hoteloch a preplnené pláže? Z paluby lode spoznáte pobrežie z druhej strany: zátoky, ostrovy a starobylé mestečká.</p>
-      <p class="hero-akcie"><a class="tlacitko" href="#kontakt">Pošlite mi ponuku</a> <a class="odkaz" href="#sluzby">Čo ponúkame</a></p>
-    </div>
-    <div class="hero-foto">
-      {{ img('hero.jpg', 'Plachetnica na mori pri chorvátskych ostrovoch Kornati', sizes='(min-width: 60rem) 40rem, 100vw') }}
-    </div>
+  {{ img('hero.jpg', 'Plachetnica na mori pri chorvátskych ostrovoch Kornati', sizes='100vw', cls='hero-obraz') }}
+  <div class="hero-zakryv"></div>
+  <div class="wrap hero-text">
+    <p class="stitok">Dovolenka na jachte · Chorvátsko</p>
+    <h1>Pobrežie spoznáte najlepšie z paluby lode</h1>
+    <p class="lead">Dovolenka na jachte, prenájom lodí, kurzy jachtingu a teambuilding. Neláka Vás pobyt v hoteloch a preplnené pláže? My Vás vezmeme inam.</p>
+    <p class="hero-akcie"><a class="tlacitko" href="#kontakt">Pošlite mi ponuku</a> <a class="odkaz" href="#sluzby">Čo ponúkame</a></p>
   </div>
 </section>
 
@@ -23,7 +20,6 @@
       {% for s in data.sluzby %}
       <li class="zastavka" id="{{ s.id }}">
         <div class="zastavka-text">
-          <span class="cislo" aria-hidden="true">{{ s.cislo }}</span>
           <h3>{{ s.nazev }}</h3>
           <p>{{ s.popis }}</p>
           <p><a class="odkaz" href="#kontakt">Spýtať sa na ponuku</a></p>
@@ -32,6 +28,14 @@
       </li>
       {% endfor %}
     </ol>
+    <div class="dalsie">
+      <h3>A ešte</h3>
+      <ul role="list">
+        <li><strong>Regaty</strong> – súťaživý deň na vode, na ktorý nepotrebujete jachtárske znalosti.</li>
+        <li><strong>Okružné plavby</strong> na výletných lodiach po celom svete.</li>
+        <li><strong>Lyžovanie v Alpách</strong> a pomoc s kúpou vlastnej lode.</li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -47,22 +51,12 @@
   </div>
 </section>
 
-<section class="sekce galeria" id="galeria">
-  <div class="wrap">
-    <h2 class="nadpis-sekcie">Z paluby</h2>
-    <div class="galeria-mriezka">
-      {{ img('galeria-dovolenka.jpg', 'Dovolenka na jachte', sizes='(min-width: 60rem) 24rem, 100vw') }}
-      {{ img('regaty.jpg', 'Študentská regata', sizes='(min-width: 60rem) 24rem, 100vw') }}
-    </div>
-  </div>
-</section>
-
 <section class="sekce kontakt" id="kontakt">
   <div class="wrap kontakt-in">
     <div>
       <h2 class="nadpis-sekcie">Pošlite mi ponuku</h2>
       <p>Napíšte, kam by ste chceli plávať, v akom termíne a v koľkých. Ozveme sa Vám s ponukou.</p>
-      <p class="kontakt-udaje">{{ site.nazev }}<br>{{ site.kontakt.adresa.ulice }}, {{ site.kontakt.adresa.psc }} {{ site.kontakt.adresa.mesto }}<br><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></p>
+      <p class="kontakt-udaje">{{ site.nazev }}<br>{{ site.kontakt.adresa.ulice }}, {{ site.kontakt.adresa.psc }} {{ site.kontakt.adresa.mesto }}<br><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a><br><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></p>
     </div>
     {% include "_formular.html" %}
   </div>

@@ -6,16 +6,21 @@
   "sport a výuka",
   "gastro a ubytování"
  ],
- "ico": "",
+ "ico": "36430773",
  "ares": null,
  "kontakty": {
-  "emaily": [],
-  "telefony": [],
-  "adresa": "",
+  "emaily": [
+   "info@yachttravel.sk"
+  ],
+  "telefony": [
+   "+421 41 5622210"
+  ],
+  "adresa": "Bytčická 16, 010 01 Žilina",
   "socialni_site": [
    "https://www.facebook.com/yachttravel.sk",
    "https://www.youtube.com/channel/UCb2fv4CABaXPTxBexac4U0w"
-  ]
+  ],
+  "zdroj": "https://www.yachttravel.sk/kontakt.html (Centrála spoločnosti, IČO 36430773)"
  },
  "logo": {
   "soubor": "podklady/logo.png",
@@ -132,11 +137,7 @@
   }
  ],
  "chybi": [
-  "e-mail",
-  "telefon (do webu, ne do mailů)",
-  "IČO",
   "fotky firmy/provozu/produktů (nalezeno 0, potřeba aspoň 6)",
-  "adresa / provozovna",
   "potvrzení služeb a ceníku (nic nevymýšlet)"
  ],
  "popis_webu": "Yacht Travel vám ponúka dovolenku na jachte, prenájom lodí, kurzy jachtingu, kapitánsky kurz, luxusné okružné plavby, yachtcharter, teambuilding a bezplatnú inzerciu.\n"

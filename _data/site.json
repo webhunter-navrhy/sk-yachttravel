@@ -14,18 +14,40 @@
   "ico": "36430773",
   "kontakt": {
     "email": "info@yachttravel.sk",
-    "telefon": "",
-    "adresa": {"ulice": "Bytčická 16", "psc": "010 01", "mesto": "Žilina", "zeme": "SK"}
+    "telefon": "+421 41 5622210",
+    "adresa": {
+      "ulice": "Bytčická 16",
+      "psc": "010 01",
+      "mesto": "Žilina",
+      "zeme": "SK"
+    }
   },
   "oteviraci_doba": [],
-  "sameas": ["https://www.facebook.com/yachttravel.sk"],
+  "sameas": [
+    "https://www.facebook.com/yachttravel.sk"
+  ],
   "cenove_rozpeti": "",
-  "formular": {"endpoint": "", "demo": true, "predmet": "Dopyt z webu Yacht Travel"},
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Dopyt z webu Yacht Travel"
+  },
   "nav": [
-    {"text": "Služby", "href": "#sluzby"},
-    {"text": "Kurzy", "href": "#kurzy"},
-    {"text": "Teambuilding", "href": "#teambuilding"},
-    {"text": "Galéria", "href": "#galeria"},
-    {"text": "Kontakt", "href": "#kontakt"}
+    {
+      "text": "Služby",
+      "href": "#sluzby"
+    },
+    {
+      "text": "Kurzy",
+      "href": "#kurzy"
+    },
+    {
+      "text": "Teambuilding",
+      "href": "#teambuilding"
+    },
+    {
+      "text": "Kontakt",
+      "href": "#kontakt"
+    }
   ]
 }
