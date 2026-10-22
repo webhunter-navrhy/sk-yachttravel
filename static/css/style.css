@@ -131,7 +131,7 @@ a { color: inherit; }
   .zastavka { grid-template-columns: 1fr 1fr; gap: var(--space-5); align-items: center; }
   .zastavka:nth-child(even) .zastavka-foto { order: -1; }
   .tim-in { grid-template-columns: 28rem 1fr; gap: var(--space-5); }
-  .galeria-mriezka { grid-template-columns: repeat(3, 1fr); }
+  .galeria-mriezka { grid-template-columns: repeat(2, minmax(0, 24rem)); }
   .kontakt-in { grid-template-columns: 1fr 1fr; gap: var(--space-5); }
   .paticka-in { grid-template-columns: 1fr 1fr; }
   .paticka-poznamka { grid-column: 1 / -1; }
