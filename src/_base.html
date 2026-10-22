@@ -28,6 +28,10 @@
     <nav aria-label="Hlavná navigácia">
       {% for n in site.nav %}<a href="{{ n.href if n.href.startswith(('#', 'http', 'tel:', 'mailto:')) else url(n.href) }}">{{ n.text }}</a> {% endfor %}
     </nav>
+    <div class="hlavicka-akce">
+      {% if site.kontakt.telefon %}<a class="hlavicka-tel" href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a>{% endif %}
+      <a class="tlacitko" href="#kontakt">Pošlite mi ponuku</a>
+    </div>
   </div>
 </header>
 <main id="obsah">

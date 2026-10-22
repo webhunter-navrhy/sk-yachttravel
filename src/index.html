@@ -16,18 +16,27 @@
 <section class="sekce trasa" id="sluzby">
   <div class="wrap">
     <h2 class="nadpis-sekcie">Kam Vás vezmeme</h2>
-    <ol role="list" class="zastavky">
-      {% for s in data.sluzby %}
-      <li class="zastavka" id="{{ s.id }}">
+    {% set pr, dov, ku = data.sluzby[0], data.sluzby[1], data.sluzby[2] %}
+    <div class="pas" id="{{ dov.id }}">
+      <div class="pas-foto">{{ img(dov.foto, dov.alt, sizes='(min-width: 72rem) 72rem, 100vw') }}</div>
+      <div class="pas-box">
+        <h3>{{ dov.nazev }}</h3>
+        <p>{{ dov.popis }}</p>
+        <p><a class="odkaz" href="#kontakt">Spýtať sa na ponuku</a></p>
+      </div>
+    </div>
+    <div class="dvojice">
+      {% for s in [pr, ku] %}
+      <div class="zastavka-blok" id="{{ s.id }}">
+        <div class="zastavka-foto">{{ img(s.foto, s.alt, sizes='(min-width: 60rem) 36rem, 100vw') }}</div>
         <div class="zastavka-text">
           <h3>{{ s.nazev }}</h3>
           <p>{{ s.popis }}</p>
           <p><a class="odkaz" href="#kontakt">Spýtať sa na ponuku</a></p>
         </div>
-        <div class="zastavka-foto">{{ img(s.foto, s.alt, sizes='(min-width: 60rem) 36rem, 100vw') }}</div>
-      </li>
+      </div>
       {% endfor %}
-    </ol>
+    </div>
     <div class="dalsie">
       <h3>A ešte</h3>
       <ul role="list">
