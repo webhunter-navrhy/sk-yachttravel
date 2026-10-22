@@ -1,0 +1,5 @@
+[
+ {"id":"prenajom","cislo":"01","nazev":"Prenájom lodí","popis":"Prenajatá jachta nie je nedosiahnuteľný sen. Vyberte sa v ústrety zážitkom, spoznať zaujímavé miesta, nádherné pláže, nedotknuté zátoky, jaskyne a starobylé mestečká s krásnymi promenádami. Pomôžeme Vám aj s kúpou samotnej lode.","foto":"prenajom.jpg","alt":"Plachetnica-katamarán na kotve pri pláži"},
+ {"id":"dovolenka","cislo":"02","nazev":"Dovolenka na jachte","popis":"Najlepší spôsob, ako spoznať malebné chorvátske pobrežie, je z paluby lode. Počas týždňa na jachte Vám skúsený kapitán pripraví program šitý priamo na mieru. Užijete si romantickú plavbu, šnorchľovanie aj voľné potápanie v priezračných vodách.","foto":"dovolenka.jpg","alt":"Ostrovček v Jadranskom mori z paluby lode"},
+ {"id":"kurzy","cislo":"03","nazev":"Kurzy jachtingu","popis":"Máte radi veci pevne vo svojich rukách? Naučte sa ovládať plachty, viazať uzly a navigovať na mori. Kapitánske kurzy a skúšky absolvujete priamo na jachte v Chorvátsku.","foto":"kurzy.jpg","alt":"Priezračné more z paluby"}
+]

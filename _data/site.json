@@ -1,0 +1,31 @@
+{
+  "slug": "sk-yachttravel",
+  "nazev": "Yacht Travel, s.r.o.",
+  "url": "https://webhunter-navrhy.github.io/sk-yachttravel/",
+  "base": "/sk-yachttravel/",
+  "lang": "sk",
+  "popis": "Yacht Travel Žilina: dovolenka na jachte, prenájom lodí, kurzy jachtingu a kapitánske skúšky v Chorvátsku, teambuilding na plachetnici.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "hero.jpg",
+  "logo": "logo.png",
+  "theme_color": "#001d51",
+  "typ": "TravelAgency",
+  "ico": "36430773",
+  "kontakt": {
+    "email": "info@yachttravel.sk",
+    "telefon": "",
+    "adresa": {"ulice": "Bytčická 16", "psc": "010 01", "mesto": "Žilina", "zeme": "SK"}
+  },
+  "oteviraci_doba": [],
+  "sameas": ["https://www.facebook.com/yachttravel.sk"],
+  "cenove_rozpeti": "",
+  "formular": {"endpoint": "", "demo": true, "predmet": "Dopyt z webu Yacht Travel"},
+  "nav": [
+    {"text": "Služby", "href": "#sluzby"},
+    {"text": "Kurzy", "href": "#kurzy"},
+    {"text": "Teambuilding", "href": "#teambuilding"},
+    {"text": "Galéria", "href": "#galeria"},
+    {"text": "Kontakt", "href": "#kontakt"}
+  ]
+}

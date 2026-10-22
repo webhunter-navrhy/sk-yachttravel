@@ -1,0 +1,71 @@
+{% extends "_base.html" %}
+{% set titulek = 'Yacht Travel Žilina – jachty, kurzy jachtingu, teambuilding' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-text">
+      <p class="stitok">Žilina · Chorvátsko</p>
+      <h1>Dovolenka na jachte, prenájom lodí a kurzy jachtingu</h1>
+      <p class="lead">Neláka Vás pobyt v hoteloch a preplnené pláže? Z paluby lode spoznáte pobrežie z druhej strany: zátoky, ostrovy a starobylé mestečká.</p>
+      <p class="hero-akcie"><a class="tlacitko" href="#kontakt">Pošlite mi ponuku</a> <a class="odkaz" href="#sluzby">Čo ponúkame</a></p>
+    </div>
+    <div class="hero-foto">
+      {{ img('hero.jpg', 'Plachetnica na mori pri chorvátskych ostrovoch Kornati', sizes='(min-width: 60rem) 40rem, 100vw') }}
+    </div>
+  </div>
+</section>
+
+<section class="sekce trasa" id="sluzby">
+  <div class="wrap">
+    <h2 class="nadpis-sekcie">Kam Vás vezmeme</h2>
+    <ol role="list" class="zastavky">
+      {% for s in data.sluzby %}
+      <li class="zastavka" id="{{ s.id }}">
+        <div class="zastavka-text">
+          <span class="cislo" aria-hidden="true">{{ s.cislo }}</span>
+          <h3>{{ s.nazev }}</h3>
+          <p>{{ s.popis }}</p>
+          <p><a class="odkaz" href="#kontakt">Spýtať sa na ponuku</a></p>
+        </div>
+        <div class="zastavka-foto">{{ img(s.foto, s.alt, sizes='(min-width: 60rem) 36rem, 100vw') }}</div>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="sekce tim" id="teambuilding">
+  <div class="wrap tim-in">
+    <div class="tim-foto">{{ img('teambuilding.jpg', 'Posádka tímu na palube plachetnice', sizes='(min-width: 60rem) 28rem, 100vw') }}</div>
+    <div>
+      <h2 class="nadpis-sekcie">Teambuilding a regaty</h2>
+      <p>Teambuilding v preklade znamená budovanie tímu a námorná plachetnica je na to ideálne prostredie. Ponúkame športovo-rekreačné akcie plné zábavy, relaxu a aktívneho oddychu spojené so súťažou v jachtingu.</p>
+      <p>Nepotrebujete jachtárske znalosti, stačí dobrá nálada a chuť zažiť niečo nové.</p>
+      <p><a class="tlacitko" href="#kontakt">Chcem ponuku pre tím</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="sekce galeria" id="galeria">
+  <div class="wrap">
+    <h2 class="nadpis-sekcie">Z paluby</h2>
+    <div class="galeria-mriezka">
+      {{ img('galeria-dovolenka.jpg', 'Dovolenka na jachte', sizes='(min-width: 60rem) 24rem, 100vw') }}
+      {{ img('regaty.jpg', 'Študentská regata', sizes='(min-width: 60rem) 24rem, 100vw') }}
+      {{ img('galeria-prenajom.jpg', 'Prenajatá plachetnica', sizes='(min-width: 60rem) 24rem, 100vw') }}
+    </div>
+  </div>
+</section>
+
+<section class="sekce kontakt" id="kontakt">
+  <div class="wrap kontakt-in">
+    <div>
+      <h2 class="nadpis-sekcie">Pošlite mi ponuku</h2>
+      <p>Napíšte, kam by ste chceli plávať, v akom termíne a v koľkých. Ozveme sa Vám s ponukou.</p>
+      <p class="kontakt-udaje">{{ site.nazev }}<br>{{ site.kontakt.adresa.ulice }}, {{ site.kontakt.adresa.psc }} {{ site.kontakt.adresa.mesto }}<br><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></p>
+    </div>
+    {% include "_formular.html" %}
+  </div>
+</section>
+{% endblock %}

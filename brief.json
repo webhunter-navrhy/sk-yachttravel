@@ -1,0 +1,143 @@
+{
+ "slug": "yachttravel",
+ "zdroj_url": "https://www.yachttravel.sk",
+ "firma": "Yacht Travel, s.r.o.",
+ "obor": [
+  "sport a výuka",
+  "gastro a ubytování"
+ ],
+ "ico": "",
+ "ares": null,
+ "kontakty": {
+  "emaily": [],
+  "telefony": [],
+  "adresa": "",
+  "socialni_site": [
+   "https://www.facebook.com/yachttravel.sk",
+   "https://www.youtube.com/channel/UCb2fv4CABaXPTxBexac4U0w"
+  ]
+ },
+ "logo": {
+  "soubor": "podklady/logo.png",
+  "zdroj": "https://www.yachttravel.sk/Design/Images/logo.png",
+  "rozmery": [
+   105,
+   105
+  ]
+ },
+ "barvy": {
+  "css_promenne": {},
+  "z_css": [
+   "#53789d",
+   "#001d51",
+   "#a1ccf4",
+   "#502200",
+   "#fec538",
+   "#ffeaab"
+  ],
+  "z_loga": [
+   "#febe10",
+   "#22596e",
+   "#83b2d5"
+  ],
+  "theme_color": null,
+  "doporucene": [
+   "#febe10",
+   "#22596e",
+   "#53789d",
+   "#001d51"
+  ]
+ },
+ "fotky": [],
+ "fakta": [
+  {
+   "typ": "h1",
+   "text": "Dovolenka na jachte, prenájom lodí, kurzy jachtingu, teambuilding",
+   "zdroj": "https://www.yachttravel.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Prenájom lodí",
+   "zdroj": "https://www.yachttravel.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Dovolenka na jachte",
+   "zdroj": "https://www.yachttravel.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Kurzy jachtingu",
+   "zdroj": "https://www.yachttravel.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Regaty",
+   "zdroj": "https://www.yachttravel.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Team Building",
+   "zdroj": "https://www.yachttravel.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Jachty a kurzy",
+   "zdroj": "https://www.yachttravel.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "POISTENIE SKIPPEROV",
+   "zdroj": "https://www.yachttravel.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "Pošlite mi ponuku!",
+   "zdroj": "https://www.yachttravel.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "Galéria",
+   "zdroj": "https://www.yachttravel.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Chcete zažiť skutočne netradičnú dovolenku a neláka vás pobyt v hoteloch a preplnené pláže? Dovolenka na jachte, prenájom lodí, \"šnorchľovanie“ a voľné potápanie v priezračných vodách, okružné plavby na výletných lodiach po celom svete, kapitánske kurzy v Chorvátsku priamo na jachte i lyžovanie v Alpách vám ponúka Yacht Travel. Pomôžeme vám aj s kúpou samotnej lode.",
+   "zdroj": "https://www.yachttravel.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Prenajatá jachta nie je nedosiahnuteľný sen. Vyberte sa v ústrety zážitkom, spoznať zaujímavé miesta, nádherné pláže, nedotknuté zátoky, jaskyne a starobylé mestečká s krásnymi promenádami.",
+   "zdroj": "https://www.yachttravel.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Najlepší spôsob ako spoznať malebné chorvátske pobrežie, je z paluby lode. Počas týždňa stráveného na jachte vám skúsený kapitán pripraví program šitý priamo na mieru - užijete si romantickú plavbu.",
+   "zdroj": "https://www.yachttravel.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Máte radi veci pevne vo svojich rukách? Naučte sa ovládať plachty, viazať uzly a navigovať na mori - staňte sa kapitánom na lodi! Ponúkame vám možnosť absolvovať kapitánsky kurz.",
+   "zdroj": "https://www.yachttravel.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Ponúkame Vámšportovo-rekreačné akcie plné zábavy, relaxu a aktívneho oddychu spojené so súťažou v jachtingu. Nepotrebujete jachtárske znalosti, stačí Vám dobrá nálada a chuť zažiť niečo nové",
+   "zdroj": "https://www.yachttravel.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Teambuilding v preklade znamená budovanie tímu. Priam ideálne a obľúbené prostredie na teambuilding je námorná plachetnica.",
+   "zdroj": "https://www.yachttravel.sk/"
+  }
+ ],
+ "chybi": [
+  "e-mail",
+  "telefon (do webu, ne do mailů)",
+  "IČO",
+  "fotky firmy/provozu/produktů (nalezeno 0, potřeba aspoň 6)",
+  "adresa / provozovna",
+  "potvrzení služeb a ceníku (nic nevymýšlet)"
+ ],
+ "popis_webu": "Yacht Travel vám ponúka dovolenku na jachte, prenájom lodí, kurzy jachtingu, kapitánsky kurz, luxusné okružné plavby, yachtcharter, teambuilding a bezplatnú inzerciu.\n"
+}
